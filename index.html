@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>The F3D5 Calculator</title>
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="display">
+      </div>
+      <div class="calculator-container">
+        <!-- first row -->
+        <div class="grid-item memory" id="MC">MC</div>
+        <div class="grid-item memory" id="MS">MS</div>
+        <div class="grid-item memory" id="MR">MR</div>
+        <div class="grid-item memory" id="M+">M+</div>
+        <div class="grid-item" id="clear">C</div>
+        <div class="grid-item binOp" id="mod">mod</div>
+        <div class="grid-item binOp" id="+">+</div>
+        <!-- second row -->
+        <div class="grid-item trig" id="sin">sin</div>
+        <div class="grid-item trig" id="cos">cos</div>
+        <div class="grid-item trig" id="tan">tan</div>
+        <div class="grid-item digit" id="7">7</div>
+        <div class="grid-item digit" id="8">8</div>
+        <div class="grid-item digit" id="9">9</div>
+        <div class="grid-item binOp" id="-">-</div>
+        <!-- third row -->
+        <div class="grid-item trig" id="cot">cot</div>
+        <div class="grid-item trig" id="sec">sec</div>
+        <div class="grid-item trig" id="csc">csc</div>
+        <div class="grid-item digit" id="4">4</div>
+        <div class="grid-item digit" id="5">5</div>
+        <div class="grid-item digit" id="6">6</div>
+        <div class="grid-item binOp" id="*">*</div>
+        <!-- fourth row -->
+        <div class="grid-item expo" id="^">x<sup>y</sup></div>
+        <div class="grid-item poly" id="square">x<sup>2</sup></div>
+        <div class="grid-item poly" id="sqrt">&radic;x</div>
+        <div class="grid-item digit" id="1">1</div>
+        <div class="grid-item digit" id="2">2</div>
+        <div class="grid-item digit" id="3">3</div>
+        <div class="grid-item binOp" id="/">/</div>
+        <!-- fifth row -->
+        <div class="grid-item" id="pi">&pi;</div>
+        <div class="grid-item expo" id="e^x">e<sup>x</sup></div>
+        <div class="grid-item log" id="ln">ln(x)</div>
+        <div class="grid-item digit" id="0">0</div>
+        <div class="grid-item" id="negate">&plusmn;</div>
+        <div class="grid-item" id=".">.</div>
+        <div class="grid-item binOp" id="=">=</div>
+      </div>
+    </div>
+    <div class="history">
+      <button id="clearHistory">clear history</button>
+      <ul id="list"></ul>
+    </div>
+      <script src="src/js/state.js"></script>
+      <script src="src/js/history.js"></script>
+      <script src="src/js/numerals.js"></script>
+      <script src="src/js/binary.js"></script>
+      <script src="src/js/memory.js"></script>
+      <script src="src/js/trig.js"></script>
+      <script src="src/js/unary.js"></script>
+    </body>
+  </html>

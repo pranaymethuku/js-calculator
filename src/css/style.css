@@ -1,0 +1,208 @@
+/*
+Created by: Sayeef Moyen 7/04
+
+Calculator-wide stylesheet
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+#display {
+  position: absolute;
+  width: 34.2vw;
+  top: 1vh;
+  left: 0.8vw;
+  height: 5vh;
+  text-align: center;
+  color: black;
+  padding: 0.1vh 0 0.9vh;
+  font-size: 32px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.calculator {
+  z-index: 2;
+  position: absolute;
+  left: 15vw;
+  top: 27.95vh;
+  width: 36vw;
+  height: 44.1vh;
+  background-color: #0b0d0f;
+  border-left: 1px solid #101316;
+  border-top: 1px solid #101316;
+  border-bottom: 1px solid #101316;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: 5px 0 5px -2px #030405;
+  -moz-box-shadow: 5px 0 5px -2px #030405;
+  -o-box-shadow: 5px 0 5px -2px #030405;
+  box-shadow: 5px 0 5px -2px #030405;
+}
+
+.calculator-container {
+  position: absolute;
+  width: 35vw;
+  height: 35vh;
+  top: 7vh;
+  display: grid;
+  grid-template-columns: repeat(7, 5vw);
+  grid-template-rows: repeat(5, 7vh);
+  padding: 0.8vh 0.5vw 0.8vh 0.5vw;
+}
+
+.calculator-container .grid-item {
+  border-radius: 5px;
+  margin: 2.5px;
+  text-align: center;
+  padding-top: 2vh;
+  background: linear-gradient(#ffffff, #e8e8e8);
+  color: #151819;
+  border: 1px solid #ffffff;
+}
+
+.calculator-container .grid-item:hover {
+  background: linear-gradient(#e0f7ff, #cce0e8);
+}
+
+.calculator-container .grid-item:active {
+  background: linear-gradient(#c9efff, #b9dbea);
+  border: 1px solid #edf9ff;
+}
+
+.calculator-container .digit {
+  font-weight: 600;
+}
+
+.calculator-container #clear {
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid #53aa94;
+  background: linear-gradient(#5dccae, #3d8975);
+}
+
+.calculator-container #clear:hover {
+  border: 1px solid #c9ffee;
+  background: linear-gradient(#afffe9, #72a899);
+}
+
+.calculator-container #clear:active {
+  border: 1px solid #53aa94;
+  background: linear-gradient(#387a6c, #60d1b9);
+}
+
+.calculator-container .trig {
+  border: 1px solid #8892ef;
+  background: linear-gradient(#7a87ff, #4b539e);
+}
+
+.calculator-container .trig:hover {
+  border: 1px solid #dde1ff;
+  background: linear-gradient(#bfc5ff, #a0a5d8);
+}
+
+.calculator-container .trig:active {
+  border: 1px solid #7280ff;
+  background: linear-gradient(#20254f, #424b9b);
+  color: #ffffff;
+}
+
+.calculator-container .binOp {
+  color: white;
+  border: 1px solid #33363f;
+  background: linear-gradient(#252830, #1b1d23);
+}
+
+.calculator-container .binOp:hover {
+  border: 1px solid #5f6577;
+  background: linear-gradient(#515666, #2c2f38);
+}
+
+.calculator-container .binOp:active {
+  border: 1px solid #33363f;
+  background: linear-gradient(#0b0c0f, #1b1d23);
+}
+
+.calculator-container #\= {
+  padding-top: 1vh;
+  font-size: 24px;
+  font-weight: 600;
+  border: 1px solid #aaff96;
+  background: linear-gradient(#a7ff93, #6ba55e);
+}
+
+.calculator-container #\=:hover {
+  border: 1px solid #ffffff;
+  background: linear-gradient(#bcffc3, #94cc9a);
+}
+
+.calculator-container #\=:active {
+  border: 1px solid #aaff96;
+  background: linear-gradient(#6ba55e, #a7ff93);
+}
+
+.calculator-container .grid-item.memory.disable {
+  background: #A9A9A9;
+  color: #FFFFFF;
+}
+
+.history {
+  z-index: -2;
+  position: absolute;
+  left: 51vw;
+  top: 27.95vh;
+  height: 44.1vh;
+  width: 36vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #030405;
+  overflow-y: scroll;
+  font-size: 14px;
+  color: white;
+  border-right: 1px solid #090c0f;
+  border-top: 1px solid #090c0f;
+  border-bottom: 1px solid #090c0f;
+}
+
+.history #clearHistory {
+  position: absolute;
+  left: 1vw;
+  top: 1vh;
+  padding: 3px;
+  background-color: #030405;
+  position: absolute;
+  color: #5dccae;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.history #clearHistory:hover {
+  background-color: #5dccae;
+  color: #030405;
+}
+
+.history #clearHistory:active {
+  background: linear-gradient(#387a6c, #469987);
+}
+
+.history ul {
+  position: absolute;
+  list-style-type: none;
+  left: 1vw;
+  top: 4vh;
+}
+
+.history ul li {
+  padding: 5px;
+}
