@@ -1,5 +1,7 @@
 # JavaScript Calculator
 
+![Calculator Screenshot](https://github.com/pranaymethuku/js-calculator/blob/master/calculator_screenshot.png)
+
 ## Instructions to grader
 
 Once you clone the repository, you can run the project by running `firefox index.html`. HTML testing was done using the W3C HTML validator, other testing was done visually.
